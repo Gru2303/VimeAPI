@@ -61,19 +61,12 @@
 		![](/img/one/3.png)
 	- Вписываем код
 		```js
-		function getPHPSESSID() {
-		    let matches = document.cookie.match(new RegExp(
-			"(?:^|; )" + 'PHPSESSID'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-		    ));
-		    return 'Your PHPSESSID: ' + (matches ? decodeURIComponent(matches[1]) : undefined);
-		}
-		getPHPSESSID()
+		console.log(`Ваш токен сессии в Личном кабинете: ${window.getCookie("PHPSESSID")}`);
 		```
 		
-		![](/img/one/4.png)
 	- Получаем PHPSESSID
 	
-		![](/img/one/5.png)
+		![](https://i.imgur.com/MpuS4Pc.png)
 1. ##### Где взять DEV Token VimeWorld?
 	- Зайти в лаунчер VimeWorld
 	
